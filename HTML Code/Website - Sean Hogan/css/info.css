@@ -1,0 +1,171 @@
+body {         
+    box-sizing: borderbox;
+	margin:0;
+	padding:0;
+}
+header{
+  /*image is from upsplash then I edited and blurred it in paint.net*/
+	background-image: url('../images/topImg.png');
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: 100% 100%;
+}
+header img{
+	display:grid;
+	margin:auto;
+	padding-top:10em;
+	padding-bottom:10em;
+	width:400px;
+}
+h1{
+	font-family: 'Roboto Mono', monospace;
+	text-align: center;
+    grid-column: 1/-1;
+	font-size: 35px;
+	margin-top:2em;
+	margin-bottom:3em;
+}
+h2{
+	font-family: 'Montserrat', sans-serif;
+}
+#pageEnd{
+	text-align:center;
+	color:rgb(209, 203, 203);
+	background-color: rgb(19, 18, 18);
+	padding:1em;
+	font-family: Times New Roman, monospace;
+}
+
+
+
+
+
+.container {
+  padding: 2em;
+  width:90%;
+  margin:auto;
+  margin-bottom:3em;
+}
+p.subheading {
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+.trick-container {
+  grid-gap: 1em;
+  
+}
+.trick {
+  border: 1px solid #B8C8CE;
+  padding: 1em 1em 0;
+
+}
+p.code {
+  font-size: .8em;
+  margin-bottom: 0;
+  margin-top: .8em;
+}
+p.desc {
+  margin-bottom: 0;
+  background: #DAE7EB;
+  margin: 1em -1em 0;
+  padding: 1em;
+}
+
+
+p.code{
+  font-size:1.6em;
+  font-weight: bold;
+}
+
+
+
+
+
+/*Tablet view*/
+@media(min-width:600px){
+  .trick-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    
+  }
+}
+
+
+@media(min-width:1200px){
+  .trick-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    
+  }
+
+}
+
+
+
+/* Adding color to the Nav bar */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+/* Stling Nav Links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* On hover change Links color */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active class to highlight current page */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* When screen is less than 750px hide all but first on menu and show icon */
+@media screen and (max-width: 750px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon */
+@media screen and (max-width: 750px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/*For background image change to grey*/
+@media screen and (max-width: 750px) {
+	header{
+		background-image: none;
+		background-color:rgb(32, 36, 37);
+		border: 5px inset rgb(23, 43, 25);
+	}
+  }

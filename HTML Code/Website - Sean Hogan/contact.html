@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+        <meta charset="utf-8">
+        <title> Skate Club Events Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/contact.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+        <script src="js/contact.js"></script>
+    </head>
+    <body>
+    
+
+    <!-- Logo image was created by me in paint.net -->
+    <header>
+        <a href="Index.html"><img src="images/logo.png" width="200" alt="logo" id="skateLogo"></a>
+    </header>
+    
+
+    <div class="topnav" id="myTopnav">
+
+        
+
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="events.html">Events</a>
+            <a href="info.html">Info</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="#" class="active">Contact Us</a>
+            <a href="links.html">Useful Links</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </div> 
+    
+    <h1 class="page-title">Contact Us</h1>
+    <h2 id="headH2">Fill out the form to get in contact with us</h2>
+    
+
+    <form method="post" action="http://litstudentprojects.net/rwd-a2-response.php" onSubmit="return validateForm();">
+
+        <h2>Please Fill in the Info Below  . . .</h2>
+
+
+        <p><label for="name">Name: </label><input type="text" name="name" id="name"></p>
+            <br>
+        <p><label for="address">Address: </label><input type="text" name="address" id="address"></p>
+            <br>
+        <p><label for="mobile">Mobile: </label><input type="text" name="mobile" id="mobile"></p>
+            <br>
+        <p><label for="email1">Email Address: </label><input type="text" name="email1" id="email1"></p>
+            <br>
+        <p><label for="email2">Retype Email Address: </label><input type="text" name="email2" id="email2"></p>
+            <br>
+        <legend>Are you a member of the club: </legend>
+		<p><input type="radio" name="member" id="member" value="yes"><label for="member">
+		Member: </label></p>	
+		<p><input type="radio" name="member" id="nonmember" value="no"><label for="non-member">
+		Non-Member: </label></p>
+
+            <br>
+
+        <p><label>Enter your Query Here: </label></p>
+		<textarea  id="query" name="query" 
+		placeholder="Enter your comments or queries here. ">
+		</textarea>
+
+
+        <p><input type="Submit" id="submit"></p>
+    </form>
+
+
+
+
+
+
+
+
+
+	<footer id="pageEnd">
+		<p>Copyright @skateClub All rights reserved</p>
+	</footer>
+            
+                
+            
+    </body>
+</html>
