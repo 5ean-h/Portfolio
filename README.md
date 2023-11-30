@@ -2,7 +2,7 @@
 <h3 align="center">A passionate software developer in game programming from Ireland</h3>
 
 
-- 🔭 I’m currently working on **SFML Top-Down game**
+- 🔭 I’m currently working on **SFML C++ Top-Down game**
 
 - 🌱 I’m currently learning **Games Design and Development**
 
